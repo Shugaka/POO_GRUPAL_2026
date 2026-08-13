@@ -17,17 +17,21 @@ Logros:
 Gustos:
 
 -Lautaro Cepurbeda= La milanesa
+
 -Uriel Velardez: El asado
 
 Conocimientos
 
 -Lautaro Cepurbeda= Python, SQL, cURL, JavaScript, Java, Photoshop, Premiere.
+
 -Uriel Velardez: Python, Javascript, HTML5, Linux.
 
 Fotos
 
 -Lautaro Cepurbeda=
-![foto.jpg](../../Downloads/foto.jpg)
+
+![foto.jpeg](foto.jpeg)
 
 -Uriel Velardez=
+
 ![img.png](img.png)
