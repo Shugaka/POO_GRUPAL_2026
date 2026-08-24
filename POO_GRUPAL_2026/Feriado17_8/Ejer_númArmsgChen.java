@@ -1,7 +1,7 @@
 package Feriado17_8;
 
 
-public class Ejer_númArmsg {
+public class Ejer_númArmsgChen {
     public static void main(String args[]) {
         int num = 371;
         int numOrig = num;

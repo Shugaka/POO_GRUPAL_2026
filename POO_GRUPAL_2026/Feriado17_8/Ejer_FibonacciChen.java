@@ -1,6 +1,6 @@
 package Feriado17_8;
 
-public class Ejer_Fibonacci  {
+public class Ejer_FibonacciChen {
     public static void main(String[] args) {
         //Escribir un programa que calcule los primeros n términos de la sucesión de Fibonacci: 0, 1, 1, 2, 3, 5, 8, 13, 21, ..
         int anterior = 0;

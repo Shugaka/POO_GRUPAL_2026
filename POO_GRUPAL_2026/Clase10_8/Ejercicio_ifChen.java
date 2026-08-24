@@ -1,6 +1,6 @@
 package Clase10_8;
 
-public class Ejercicio_if {
+public class Ejercicio_ifChen {
     public static void main(String[] args) {
         int num = 739;
         System.out.println(num%10);

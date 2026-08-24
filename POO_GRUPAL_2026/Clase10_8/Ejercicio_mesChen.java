@@ -1,6 +1,6 @@
 package Clase10_8;
 
-public class Ejercicio_mes {
+public class Ejercicio_mesChen {
     public static void main(String[] args) {
         String mesInput = "4";
         String mes;

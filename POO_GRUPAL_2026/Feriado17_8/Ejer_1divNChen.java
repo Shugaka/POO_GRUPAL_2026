@@ -1,6 +1,6 @@
 package Feriado17_8;
 
-public class Ejer_1divN {
+public class Ejer_1divNChen {
     public static void main(String[] args) {
         //Escribir un programa que, dado un número entero positivo n, calcule la suma: 1 + 1/2 + 1/3 + ... + 1/n.
         int n = 9;

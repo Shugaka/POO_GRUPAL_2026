@@ -1,6 +1,6 @@
 package Clase10_8;
 import java.util.Scanner;
-public class anioBisiesto {
+public class anioBisiestoChen {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese un año para ver si es bisiesto: ");
