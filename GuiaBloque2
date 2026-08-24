@@ -1,0 +1,38 @@
+Ejercicio 2.1 · Nombres autoexplicativos
+int nota;    Representa el numero de la edad del usuario
+double precioProducto;   Representa el valor numerico de un producto en decimal
+boolean estaActivo;   Muestra si "estaActivo" es Verdadero o Falso
+String MartinPedro;   Representa una cadena de texto
+void calcularPromedio() { ...   Representa un metodo que ejecuta una accion concreta
+
+
+Ejercicio 2.2 · camelCase vs PascalCase
+clase: CuentaBancaria
+variable: saldoTotal
+método: calcularInteres
+clase: Factura
+variable: nombreCliente
+
+
+Ejercicio 2.3 · Palabras reservadas
+int public = 10;
+int contador = 0;
+double for = 3.14;  FALSO: no se puede usar una keyword o palabra reservada como variable
+String nombre = "Ana";
+boolean int = tru    FALSO: "tru" es un error de sintaxis.
+
+
+Ejercicio 2.4 · Estructura básica
+public class Hola {
+public static void main(String[] args) {
+System.out.println("Hola mundo");
+ }
+}
+
+
+Ejercicio 2.5 · Comentarios
+public class Circulo {   /*La clase Circulo contiene
+                          metodos como calcular el area o radio*/
+double radio = 5;
+double area = 3.14 * radio * radio;  // Determina el area de un circulo
+}
