@@ -1,6 +1,6 @@
-import java.math.MathContext;
+package Clase10_8;
 
-public class Ejercicio1Manual1 {
+public class Ejercicio1Manual1Uriel {
     public static void main (String[] args){
         int valorA = 2;
         int valorB = 4;

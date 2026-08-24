@@ -1,4 +1,6 @@
-public class calficacion {
+package Clase10_8;
+
+public class calficacionUriel {
     public static void main (String[] args){
         int puntaje = 45;
 
