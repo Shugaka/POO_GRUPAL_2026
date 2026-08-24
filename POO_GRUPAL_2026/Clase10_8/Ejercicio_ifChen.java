@@ -1,4 +1,4 @@
-package Clase10_8_26;
+package Clase10_8;
 
 public class Ejercicio_if {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Clase10_8_26;
+package Clase10_8;
 import java.util.Scanner;
 public class anioBisiesto {
     public static void main(String[] args) {

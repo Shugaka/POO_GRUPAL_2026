@@ -1,4 +1,4 @@
-package Ejercicio_while;
+package Feriado17_8;
 
 public class Ejer_Fibonacci  {
     public static void main(String[] args) {
