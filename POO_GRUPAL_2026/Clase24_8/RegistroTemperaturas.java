@@ -1,3 +1,5 @@
+package Clase24_8;
+
 public class RegistroTemperaturas {
     //arreglo para almacenar las temperaturas de los 7 dias
     private double[] temperatura; // para que el arreglo no se puede modificar directamente desde afuera.
