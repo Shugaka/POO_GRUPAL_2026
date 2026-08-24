@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a7c6dee-4cac-4db8-8471-f29fdce32e91" name="Changes" comment="fixeo todo no puedo mas jaja" />
+    <list default="true" id="9a7c6dee-4cac-4db8-8471-f29fdce32e91" name="Changes" comment="guia3">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO_GRUPAL_2026/Clase24_8/Guia3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Clase24_8/Bloque3.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -142,7 +145,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test commit" />
     <MESSAGE value="fixeo todo no puedo mas jaja" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixeo todo no puedo mas jaja" />
+    <MESSAGE value="guia3" />
+    <option name="LAST_COMMIT_MESSAGE" value="guia3" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
