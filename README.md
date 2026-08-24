@@ -30,8 +30,8 @@ Fotos
 
 -Lautaro Cepurbeda=
 
-![foto.jpeg](foto.jpeg)
+![foto.jpeg](Fotos/foto.jpeg)
 
 -Uriel Velardez=
 
-![img.png](img.png)
+![img.png](Fotos/img.png)
