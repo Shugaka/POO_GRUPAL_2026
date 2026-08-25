@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9a7c6dee-4cac-4db8-8471-f29fdce32e91" name="Changes" comment="guia 3 bloque 1/2/3/">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scr/RegistroTemperaturas.java" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Clase24_8/RegistroTemperaturas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +26,7 @@
     <option name="INCOMING_COMMITS_CHECK_STRATEGY" value="FETCH" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Clase24-Cepu" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,12 +38,12 @@
     &quot;assignee&quot;: &quot;UriiVelarz&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Shugaka/POO_GRUPAL_2026.git",
-    "accountId": "e2952bb1-5601-4e9f-ba70-f0009d14c846"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Shugaka/POO_GRUPAL_2026.git&quot;,
+    &quot;accountId&quot;: &quot;e2952bb1-5601-4e9f-ba70-f0009d14c846&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6,
   &quot;fromUser&quot;: false
@@ -76,11 +75,15 @@
     "node.js.selected.package.jshint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\IdeaProjects\POO_GRUPAL_2026" />
       <recent name="C:\Users\Admin\IdeaProjects\POO_GRUPAL_2026\POO_GRUPAL_2026\Clase24_8" />
       <recent name="C:\Users\urive\IdeaProjects\POO_GRUPAL_2026\src" />
     </key>
