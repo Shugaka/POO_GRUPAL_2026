@@ -1,4 +1,4 @@
-package Clase10_8;
+package Agosto.Clase10_8;
 
 public class Ejercicio1Manual1Uriel {
     public static void main (String[] args){

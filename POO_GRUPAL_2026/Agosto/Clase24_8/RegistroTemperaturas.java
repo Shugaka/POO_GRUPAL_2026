@@ -1,4 +1,4 @@
-package Clase24_8;
+package Agosto.Clase24_8;
 
 public class RegistroTemperaturas {
     //arreglo para almacenar las temperaturas de los 7 dias

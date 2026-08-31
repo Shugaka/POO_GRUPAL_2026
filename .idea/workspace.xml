@@ -4,8 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a7c6dee-4cac-4db8-8471-f29fdce32e91" name="Changes" comment="guia 3 bloque 1/2/3/">
+    <list default="true" id="9a7c6dee-4cac-4db8-8471-f29fdce32e91" name="Changes" comment="arreglo para que tome el source directory">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO_GRUPAL_2026/Clase10_8/ClasificacionCalificacionCepurbeda.java" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Agosto/Clase10_8/ClasificacionCalificacionCepurbeda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO_GRUPAL_2026/Clase10_8/Ejercicio1Manual1Uriel.java" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Agosto/Clase10_8/Ejercicio1Manual1Uriel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO_GRUPAL_2026/Clase10_8/Ejercicio_ifChen.java" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Agosto/Clase10_8/Ejercicio_ifChen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO_GRUPAL_2026/Clase10_8/Ejercicio_mesChen.java" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Agosto/Clase10_8/Ejercicio_mesChen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO_GRUPAL_2026/Clase10_8/anioBisiestoChen.java" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Agosto/Clase10_8/anioBisiestoChen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO_GRUPAL_2026/Clase10_8/calficacionUriel.java" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Agosto/Clase10_8/calficacionUriel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO_GRUPAL_2026/Clase24_8/Bloque1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Agosto/Clase24_8/Bloque1.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO_GRUPAL_2026/Clase24_8/Bloque2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Agosto/Clase24_8/Bloque2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO_GRUPAL_2026/Clase24_8/Bloque3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Agosto/Clase24_8/Bloque3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO_GRUPAL_2026/Clase24_8/RegistroTemperaturas.java" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Agosto/Clase24_8/RegistroTemperaturas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO_GRUPAL_2026/Feriado17_8/Ejer_1divNChen.java" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Agosto/Feriado17_8/Ejer_1divNChen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO_GRUPAL_2026/Feriado17_8/Ejer_FibonacciChen.java" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Agosto/Feriado17_8/Ejer_FibonacciChen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO_GRUPAL_2026/Feriado17_8/Ejer_númArmsgChen.java" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Agosto/Feriado17_8/Ejer_númArmsgChen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO_GRUPAL_2026/Feriado17_8/NumeroArmstrongCepurbeda.java" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Agosto/Feriado17_8/NumeroArmstrongCepurbeda.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +40,7 @@
     <option name="INCOMING_COMMITS_CHECK_STRATEGY" value="FETCH" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Clase24-Cepu" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,33 +70,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Application.Ejercicio1Manual1.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Ejercicio1Manual1.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\IdeaProjects\POO_GRUPAL_2026\.idea" />
       <recent name="C:\Users\Admin\IdeaProjects\POO_GRUPAL_2026" />
       <recent name="C:\Users\Admin\IdeaProjects\POO_GRUPAL_2026\POO_GRUPAL_2026\Clase24_8" />
       <recent name="C:\Users\urive\IdeaProjects\POO_GRUPAL_2026\src" />
@@ -94,7 +109,7 @@
       <module name="POO_GRUPAL_2026" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Clase10_8.*" />
+          <option name="PATTERN" value="Agosto.Clase10_8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,8 +135,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.185" />
-        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.185" />
+        <option value="bundled-jdk-30f59d01ecdd-63390994e64e-intellij.indexing.shared.core-IU-262.8665.337" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.8665.337" />
       </set>
     </attachedChunks>
   </component>
@@ -153,7 +168,8 @@
     <MESSAGE value="Test commit" />
     <MESSAGE value="fixeo todo no puedo mas jaja" />
     <MESSAGE value="guia3" />
-    <option name="LAST_COMMIT_MESSAGE" value="guia3" />
+    <MESSAGE value="arreglo para que tome el source directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="arreglo para que tome el source directory" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
