@@ -46,3 +46,33 @@ Nuestro objetivo es aprender los contenidos de la materia y promocionar.
 -Chen Hui Jun=
 <img width="716" height="1600" alt="image" src="https://github.com/user-attachments/assets/f5b2de41-7dd3-4f84-a174-1ea55bb646ef" />
 
+
+En este repositorio contiene ejercicios de Java que fuimos realizando durante el progreso de la materia y el proyecto final de la materia.
+
+Ejercicios por clase:
+
+Agosto:
+  clase10_8: Ejercicios introductorios
+  clase17_8: Conceptos básicos de objetos y clases
+  Continuación de ejercicios progresivos durante el mes
+
+Octubre:
+  clase5_10: Primera entrega del proyecto. Informe del proyecto y estructura UML.
+
+
+Proyecto Final: Agencia de Viajes en el Tiempo
+Descripción: Sistema de una agencia de viajes especializada en viajes a través del tiempo. El proyecto integra todos los conceptos de Programación Orientada a Objetos aprendidos durante el curso.
+
+
+Componentes del proyecto:
+UML (Agencia de viaje.drawio):
+  Diagrama de clases
+  Relaciones entre entidades
+  Estructura general del sistema
+
+Informe (Trabajo Practico POO.pdf):
+  Descripción del sistema
+  Especificaciones funcionales
+  Análisis de diseño
+  Decisiones de implementación
+
