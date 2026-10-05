@@ -44,4 +44,5 @@ Nuestro objetivo es aprender los contenidos de la materia y promocionar.
 ![img.png](Fotos/img.png)
 
 -Chen Hui Jun=
-![Uploading image.png…]()
+<img width="716" height="1600" alt="image" src="https://github.com/user-attachments/assets/f5b2de41-7dd3-4f84-a174-1ea55bb646ef" />
+
