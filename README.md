@@ -5,7 +5,7 @@ Este es nuestro repositorio grupal para Paradigma Orientado a Objetos.
 Nuestro objetivo es aprender los contenidos de la materia y promocionar.
 
 
-Logros:
+**Logros:**
 
 -Lautaro Cepurbeda= Deployar un programa serverless hosteado en vercel y conectado por cURL con Nightbot
                     Usar docker para testear un contenedor y hacer una conexion p2p
@@ -13,20 +13,27 @@ Logros:
 -Uriel Velardez=    -Realizar un curso de Red Hat Administration | 10.0 
                     -Tstear como QA en un proyecto de desarrollo de app
 
+-Chen Hui Jun= - Haber realizado un proyecto relacionado con ciberseguridad, como detección de phishing/sitios falsos.
+               - Haber realizado proyectos utilizando MongoDB, Neo4j y Redis.
+               - Haber armado red de clinica en ciscos
 
-Gustos:
+**_Gustos:_**
 
 -Lautaro Cepurbeda= La milanesa
 
 -Uriel Velardez: El asado
 
-Conocimientos
+-Chen Hui Jun: Cualquier comida que cocina mi mamá
+
+**Conocimientos**
 
 -Lautaro Cepurbeda= Python, SQL, cURL, JavaScript, Java, Photoshop, Premiere.
 
 -Uriel Velardez: Python, Javascript, HTML5, Linux.
 
-Fotos
+-Chen Hui Jun: Python, Java, SQL, MongoDB, Neo4j, Redis, Agentes inteligentes, Maven
+
+**Fotos**
 
 -Lautaro Cepurbeda=
 
@@ -35,3 +42,6 @@ Fotos
 -Uriel Velardez=
 
 ![img.png](Fotos/img.png)
+
+-Chen Hui Jun=
+![Uploading image.png…]()
