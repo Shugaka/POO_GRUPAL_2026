@@ -4,22 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a7c6dee-4cac-4db8-8471-f29fdce32e91" name="Changes" comment="arreglo para que tome el source directory">
+    <list default="true" id="9a7c6dee-4cac-4db8-8471-f29fdce32e91" name="Changes" comment="agrego el uml de la actividad del dia">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO_GRUPAL_2026/Clase10_8/ClasificacionCalificacionCepurbeda.java" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Agosto/Clase10_8/ClasificacionCalificacionCepurbeda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO_GRUPAL_2026/Clase10_8/Ejercicio1Manual1Uriel.java" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Agosto/Clase10_8/Ejercicio1Manual1Uriel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO_GRUPAL_2026/Clase10_8/Ejercicio_ifChen.java" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Agosto/Clase10_8/Ejercicio_ifChen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO_GRUPAL_2026/Clase10_8/Ejercicio_mesChen.java" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Agosto/Clase10_8/Ejercicio_mesChen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO_GRUPAL_2026/Clase10_8/anioBisiestoChen.java" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Agosto/Clase10_8/anioBisiestoChen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO_GRUPAL_2026/Clase10_8/calficacionUriel.java" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Agosto/Clase10_8/calficacionUriel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO_GRUPAL_2026/Clase24_8/Bloque1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Agosto/Clase24_8/Bloque1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO_GRUPAL_2026/Clase24_8/Bloque2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Agosto/Clase24_8/Bloque2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO_GRUPAL_2026/Clase24_8/Bloque3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Agosto/Clase24_8/Bloque3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO_GRUPAL_2026/Clase24_8/RegistroTemperaturas.java" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Agosto/Clase24_8/RegistroTemperaturas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO_GRUPAL_2026/Feriado17_8/Ejer_1divNChen.java" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Agosto/Feriado17_8/Ejer_1divNChen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO_GRUPAL_2026/Feriado17_8/Ejer_FibonacciChen.java" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Agosto/Feriado17_8/Ejer_FibonacciChen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO_GRUPAL_2026/Feriado17_8/Ejer_númArmsgChen.java" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Agosto/Feriado17_8/Ejer_númArmsgChen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO_GRUPAL_2026/Feriado17_8/NumeroArmstrongCepurbeda.java" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Agosto/Feriado17_8/NumeroArmstrongCepurbeda.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +83,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\IdeaProjects\POO_GRUPAL_2026\POO_GRUPAL_2026\Agosto\Clase31_8" />
       <recent name="C:\Users\Admin\IdeaProjects\POO_GRUPAL_2026\.idea" />
       <recent name="C:\Users\Admin\IdeaProjects\POO_GRUPAL_2026" />
       <recent name="C:\Users\Admin\IdeaProjects\POO_GRUPAL_2026\POO_GRUPAL_2026\Clase24_8" />
@@ -169,7 +156,8 @@
     <MESSAGE value="fixeo todo no puedo mas jaja" />
     <MESSAGE value="guia3" />
     <MESSAGE value="arreglo para que tome el source directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="arreglo para que tome el source directory" />
+    <MESSAGE value="agrego el uml de la actividad del dia" />
+    <option name="LAST_COMMIT_MESSAGE" value="agrego el uml de la actividad del dia" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
