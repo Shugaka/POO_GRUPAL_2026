@@ -1,4 +1,4 @@
-package Clase10_8;
+package Agosto.Clase10_8;
 
 public class Ejercicio_mesChen {
     public static void main(String[] args) {
@@ -31,7 +31,7 @@ public class Ejercicio_mesChen {
             mes = "Agosto";
             Dia = 31;
         } else if (mesInput == "9") {
-            mes = "Septiembre";
+            mes = "Octubre";
             Dia = 30;
         } else if (mesInput == "10") {
             mes = "octubre";
