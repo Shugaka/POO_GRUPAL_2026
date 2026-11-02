@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class EntradaConsola implements EntradaUsuario {
@@ -15,12 +16,23 @@ public class EntradaConsola implements EntradaUsuario {
             System.out.println((i + 1) + ". " + opciones[i]);
         }
         System.out.print("Elegi una opcion: ");
-        return teclado.nextInt();
+        return leerEntero();
     }
 
     @Override
     public int pedirNumero(String pregunta) {
         System.out.println(pregunta);
-        return teclado.nextInt();
+        return leerEntero();
+    }
+
+    // Lee una palabra y la convierte a int. Si no es un numero lanza InputMismatchException
+    // (la palabra ya fue consumida, asi que no queda basura en el Scanner).
+    private int leerEntero() {
+        String texto = teclado.next();
+        try {
+            return Integer.parseInt(texto.trim());
+        } catch (NumberFormatException e) {
+            throw new InputMismatchException("Se esperaba un numero y se recibio: " + texto);
+        }
     }
 }

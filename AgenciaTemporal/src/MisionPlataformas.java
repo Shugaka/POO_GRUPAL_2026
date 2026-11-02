@@ -3,12 +3,20 @@ import java.util.List;
 
 public class MisionPlataformas extends Mision {
 
+    private static final int ENEMIGOS_PARA_GANAR = 3;
+
     public MisionPlataformas(
             String titulo,
             int dificultad,
             String descripcion) {
 
-        super(titulo, dificultad, descripcion);   //llama al constructor de la superclase
+        super(titulo, dificultad, descripcion);   // llama al constructor de la superclase
+    }
+
+    @Override
+    public void iniciar() {
+        super.iniciar();
+        System.out.println("Objetivo: derrotar al menos " + ENEMIGOS_PARA_GANAR + " enemigos.");
     }
 
     @Override
@@ -16,7 +24,7 @@ public class MisionPlataformas extends Mision {
 
         List<Consecuencia> consecuencias = new ArrayList<>();
 
-        System.out.println("\n=== MISION DE PLATAFORMAS ===");
+        mostrarEncabezado("PLATAFORMAS");
         int opcion = entrada.elegir(
                 "Tenes que atravesar un nivel.",
                 "Explorar y recolectar monedas", "Avanzar rapidamente");
@@ -24,38 +32,29 @@ public class MisionPlataformas extends Mision {
         if (opcion == 1) {
 
             System.out.println("Recolectaste monedas.");
-            int enemigos = entrada.pedirNumero("Cuantos enemigos derrotaste?");
+            int enemigos = entrada.pedirNumero("¿Cuantos enemigos derrotaste?");
 
-            if (enemigos >= 3) {
-                consecuencias.add(
-                        new Consecuencia(
-                                "La region quedo protegida de los enemigos.",
-                                10,
-                                "Un año despues"
-                        )
-                );
+            if (enemigos >= ENEMIGOS_PARA_GANAR) {
+                consecuencias.add(crearConsecuencia(
+                        "La region quedo protegida de los enemigos.",
+                        10,
+                        "Un año despues"));
 
                 completar();
 
             } else {
-                consecuencias.add(
-                        new Consecuencia(
-                                "Quedaron enemigos que amenazan la region.",
-                                -5,
-                                "Una semana despues"
-                        )
-                );
+                consecuencias.add(crearConsecuencia(
+                        "Quedaron enemigos que amenazan la region.",
+                        -5,
+                        "Una semana despues"));
             }
 
         } else if (opcion == 2) {
 
-            consecuencias.add(
-                    new Consecuencia(
-                            "El jugador avanzo rapido, pero perdio recursos.",
-                            -10,
-                            "Inmediatamente"
-                    )
-            );
+            consecuencias.add(crearConsecuencia(
+                    "El jugador avanzo rapido, pero perdio recursos.",
+                    -10,
+                    "Inmediatamente"));
 
         } else {
 
@@ -63,5 +62,10 @@ public class MisionPlataformas extends Mision {
         }
 
         return consecuencias;
+    }
+
+    @Override
+    public String toString() {
+        return "[Plataformas] " + super.toString();
     }
 }

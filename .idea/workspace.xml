@@ -6,6 +6,31 @@
   <component name="ChangeListManager">
     <list default="true" id="9a7c6dee-4cac-4db8-8471-f29fdce32e91" name="Changes" comment="agrego GUI swing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/AgenciaTemporal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Consecuencia.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Epoca.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Evento.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Jugabilidad.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Jugador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/LineaTemporal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/MaquinaTemporal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Mision.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/MisionDetective.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/MisionPlataformas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/src/AgenciaTemporal.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/src/AgenciaTemporal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/src/Consecuencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/src/Consecuencia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/src/EntradaConsola.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/src/EntradaConsola.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/src/Epoca.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/src/Epoca.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/src/Evento.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/src/Evento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/src/Jugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/src/Jugador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/src/LineaTemporal.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/src/LineaTemporal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/src/MaquinaTemporal.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/src/MaquinaTemporal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/src/Mision.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/src/Mision.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/src/MisionDetective.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/src/MisionDetective.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/src/MisionPlataformas.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/src/MisionPlataformas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/src/VentanaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/src/VentanaPrincipal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +104,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/Admin/IdeaProjects/POO_GRUPAL_2026/AgenciaTemporal/src/src/src/Main.kt",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel"

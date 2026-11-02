@@ -1,8 +1,9 @@
-public class Consecuencia {
+// Clase inmutable: final + atributos final + sin setters.
+public final class Consecuencia {
 
-    private String descripcion;
-    private int impacto;
-    private String momento;
+    private final String descripcion;
+    private final int impacto;
+    private final String momento;
 
     public Consecuencia(String descripcion, int impacto, String momento) {
         this.descripcion = descripcion;
@@ -23,13 +24,18 @@ public class Consecuencia {
     }
 
     public void aplicar(LineaTemporal lineaTemporal) {
-        lineaTemporal.agregarConsecuencia(this);   //Le pide a la línea temporal que registre esta consecuencia.
-                                                    // Usamos this para enviar el objeto Consecuencia actual.
+        lineaTemporal.agregarConsecuencia(this);   // le pide a la linea temporal que registre esta consecuencia
+                                                    // (this = el objeto Consecuencia actual)
     }
 
     public String mostrar() {
         return "Consecuencia: " + descripcion
                 + " | Impacto: " + impacto
                 + " | Momento: " + momento;
+    }
+
+    @Override
+    public String toString() {
+        return mostrar();
     }
 }

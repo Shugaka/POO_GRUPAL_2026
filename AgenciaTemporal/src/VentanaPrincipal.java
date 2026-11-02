@@ -26,6 +26,9 @@ public class VentanaPrincipal extends JFrame {
         cargarEpocas();
         actualizarEstado();
 
+        // Hilo separado: recarga la energia de a poco y refresca la pantalla (siempre desde el hilo de Swing)
+        RecargaAutomatica.iniciar(maquina, 5000, 5, () -> SwingUtilities.invokeLater(this::actualizarEstado));
+
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(760, 520);
         setLocationRelativeTo(null);
@@ -61,6 +64,7 @@ public class VentanaPrincipal extends JFrame {
         lateral.add(boton("Futuro y consecuencias", e -> agencia.getLineaTemporal().mostrarFuturo()));
         lateral.add(boton("Eventos", e -> agencia.getLineaTemporal().mostrarEventos()));
         lateral.add(boton("Recargar maquina", e -> { maquina.recargarEnergia(); actualizarEstado(); }));
+        lateral.add(boton("Regresar al presente", e -> { agencia.regresarAlPresente(); actualizarEstado(); }));
         lateral.add(boton("Salir", e -> System.exit(0)));
 
         add(lateral, BorderLayout.EAST);
@@ -120,20 +124,24 @@ public class VentanaPrincipal extends JFrame {
 
     // Todo System.out.println de las clases del modelo termina en el JTextArea.
     private void redirigirSalidaAlTextArea() {
-        OutputStream out = new OutputStream() {
-            @Override
-            public void write(int b) {
-                SwingUtilities.invokeLater(() -> consola.append(String.valueOf((char) b)));
-            }
-            @Override
-            public void write(byte[] b, int off, int len) {
-                String texto = new String(b, off, len, java.nio.charset.StandardCharsets.UTF_8);
-                SwingUtilities.invokeLater(() -> {
-                    consola.append(texto);
-                    consola.setCaretPosition(consola.getDocument().getLength());
-                });
-            }
-        };
-        System.setOut(new PrintStream(out, true, java.nio.charset.StandardCharsets.UTF_8));
+        System.setOut(new PrintStream(new ConsolaOutputStream(), true, java.nio.charset.StandardCharsets.UTF_8));
+    }
+
+    // Clase interna (inner class): necesita acceder al JTextArea "consola" de la ventana.
+    private class ConsolaOutputStream extends OutputStream {
+
+        @Override
+        public void write(int b) {
+            SwingUtilities.invokeLater(() -> consola.append(String.valueOf((char) b)));
+        }
+
+        @Override
+        public void write(byte[] b, int off, int len) {
+            String texto = new String(b, off, len, java.nio.charset.StandardCharsets.UTF_8);
+            SwingUtilities.invokeLater(() -> {
+                consola.append(texto);
+                consola.setCaretPosition(consola.getDocument().getLength());
+            });
+        }
     }
 }

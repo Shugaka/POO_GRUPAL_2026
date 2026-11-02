@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.List;
 
 public class AgenciaTemporal {
@@ -38,13 +39,9 @@ public class AgenciaTemporal {
         }
 
         for (int i = 0; i < epocas.size(); i++) {
-            Epoca epoca = epocas.get(i);
-
-            System.out.println((i + 1) + ". " + epoca.getNombre() + " | Año: " + epoca.getAnio()
-            );
+            System.out.println((i + 1) + ". " + epocas.get(i));
         }
     }
-
 
     public void jugarMision(Epoca epoca, int numeroMision, EntradaUsuario entrada) {
         if (!epocas.contains(epoca)) {
@@ -52,51 +49,79 @@ public class AgenciaTemporal {
             return;
         }
 
-        List<Mision> misiones = epoca.getMisiones();
-
-        if (numeroMision < 1 || numeroMision > misiones.size()) {
-            System.out.println("Numero de mision invalido.");
+        // 1. Buscar la mision (puede lanzar una excepcion propia)
+        Mision mision;
+        try {
+            mision = epoca.getMision(numeroMision);
+        } catch (MisionInvalidaException e) {
+            System.out.println(e.getMessage());
             return;
         }
 
+        // 2. Viajar a la epoca (puede lanzar una excepcion propia)
         MaquinaTemporal maquina = jugador.getMaquinaTemporal();
 
-        maquina.viajar(epoca);
-
-        if (!maquina.isViajando()) {
-            return;
-        }
-
-        lineaTemporal.agregarEvento(
-                new Evento("Viaje a " + epoca.getNombre(), "VIAJE")
-        );
-
-        Mision mision = misiones.get(numeroMision - 1);
-
-        mision.iniciar();
-
-        List<Consecuencia> consecuencias = mision.jugar(entrada);
-
-        if (consecuencias != null && !consecuencias.isEmpty()) {
-            for (Consecuencia consecuencia : consecuencias) {
-                consecuencia.aplicar(lineaTemporal);
+        if (maquina.isViajando()) {
+            System.out.println("Seguis en el pasado: jugas la mision sin viajar de nuevo.");
+        } else {
+            try {
+                maquina.viajar(epoca);
+            } catch (EnergiaInsuficienteException e) {
+                System.out.println(e.getMessage());
+                return;
             }
+            lineaTemporal.agregarEvento(
+                    new Evento("Viaje a " + epoca.getNombre(), TipoEvento.VIAJE)
+            );
         }
 
-        jugador.registrarMision(mision);
+        // 3. Jugar la mision. Pase lo que pase, el bloque finally intenta volver al presente.
+        try {
+            mision.iniciar();
 
-        lineaTemporal.agregarEvento(
-                new Evento("Se ejecuto la mision: " + mision.getTitulo(), "MISION")
-        );
+            List<Consecuencia> consecuencias = mision.jugar(entrada);
 
-        lineaTemporal.aplicarCambios();
-        lineaTemporal.mostrarFuturo();
+            if (consecuencias != null) {
+                for (Consecuencia consecuencia : consecuencias) {
+                    consecuencia.aplicar(lineaTemporal);
+                }
+            }
 
-        maquina.regresarAlPresente();
+            jugador.registrarMision(mision);
 
-        lineaTemporal.agregarEvento(
-                new Evento("El jugador intento regresar al presente.", "REGRESO")
-        );
+            lineaTemporal.agregarEvento(
+                    new Evento("Se ejecuto la mision: " + mision.getTitulo(), TipoEvento.MISION)
+            );
+
+            lineaTemporal.aplicarCambios();
+            lineaTemporal.mostrarFuturo();
+
+            if (mision.isCompletada()) {
+                mision.aumentarDificultad();   // la proxima vez que se juegue, sera mas dificil
+            }
+
+        } catch (InputMismatchException e) {
+            System.out.println("Entrada invalida: se cancela la mision.");
+        } finally {
+            regresarAlPresente();
+        }
     }
 
+    public void regresarAlPresente() {
+        MaquinaTemporal maquina = jugador.getMaquinaTemporal();
+        boolean estabaViajando = maquina.isViajando();
+
+        try {
+            maquina.regresarAlPresente();
+
+            if (estabaViajando && !maquina.isViajando()) {
+                lineaTemporal.agregarEvento(
+                        new Evento("El jugador regreso al presente.", TipoEvento.REGRESO)
+                );
+            }
+        } catch (EnergiaInsuficienteException e) {
+            System.out.println(e.getMessage()
+                    + " Espera a que la maquina se recargue o usa la opcion de recargar.");
+        }
+    }
 }

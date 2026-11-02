@@ -1,33 +1,38 @@
 public class MaquinaTemporal {
 
+    // Constantes static final: un unico valor compartido por todas las maquinas.
+    public static final int ENERGIA_MAXIMA = 100;
+    public static final int COSTO_VIAJE = 30;
+    public static final int COSTO_REGRESO = 20;
+
     private int energia;
     private boolean viajando;
 
     public MaquinaTemporal() {
-        this.energia = 100;
+        this.energia = ENERGIA_MAXIMA;
         this.viajando = false;
     }
 
-    public int getEnergia() {
+    // synchronized: la energia tambien la modifica el hilo RecargaAutomatica.
+    public synchronized int getEnergia() {
         return energia;
     }
 
-    public boolean isViajando() {
+    public synchronized boolean isViajando() {
         return viajando;
     }
 
-    public void viajar(Epoca epoca) {
+    public synchronized void viajar(Epoca epoca) throws EnergiaInsuficienteException {
         if (viajando) {
             System.out.println("Ya estas viajando en el tiempo.");
             return;
         }
 
-        if (energia < 30) {
-            System.out.println("No hay energia suficiente para viajar.");
-            return;
+        if (energia < COSTO_VIAJE) {
+            throw new EnergiaInsuficienteException("viajar", COSTO_VIAJE, energia);
         }
 
-        energia -= 30;
+        energia -= COSTO_VIAJE;
         viajando = true;
 
         System.out.println("\n=== VIAJE TEMPORAL ===");
@@ -36,26 +41,35 @@ public class MaquinaTemporal {
         System.out.println("Energia restante: " + energia);
     }
 
-    public void regresarAlPresente() {
+    public synchronized void regresarAlPresente() throws EnergiaInsuficienteException {
         if (!viajando) {
             System.out.println("La maquina ya esta en el presente.");
             return;
         }
 
-        if (energia < 20) {
-            System.out.println("No hay energia suficiente para regresar.");
-            return;
+        if (energia < COSTO_REGRESO) {
+            throw new EnergiaInsuficienteException("regresar", COSTO_REGRESO, energia);
         }
 
-        energia -= 20;
+        energia -= COSTO_REGRESO;
         viajando = false;
 
         System.out.println("\nRegresaste al presente.");
         System.out.println("Energia restante: " + energia);
     }
 
-    public void recargarEnergia() {
-        energia = 100;
+    // Sobrecarga de metodos: mismo nombre, distintos parametros.
+    // Version manual: recarga todo y avisa.
+    public synchronized void recargarEnergia() {
+        energia = ENERGIA_MAXIMA;
         System.out.println("Maquina recargada. Energia: " + energia);
+    }
+
+    // Version gradual (la usa el hilo): suma una cantidad sin pasarse del maximo.
+    // Devuelve true si la energia realmente cambio.
+    public synchronized boolean recargarEnergia(int cantidad) {
+        int anterior = energia;
+        energia = Math.min(ENERGIA_MAXIMA, energia + cantidad);
+        return energia != anterior;
     }
 }

@@ -1,7 +1,12 @@
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
 public class Main {
+
+    // Hilo de recarga automatica: +5 de energia cada 5 segundos.
+    private static final long INTERVALO_RECARGA_MS = 5000;
+    private static final int CANTIDAD_RECARGA = 5;
 
     public static void main(String[] args) {
 
@@ -43,15 +48,21 @@ public class Main {
         agencia.agregarEpoca(edadMedia);
         agencia.agregarEpoca(futuro);
 
-        // 7. Iniciar el menu
-        int opcion;
+        // 7. Arrancar el hilo que recarga la energia en segundo plano
+        RecargaAutomatica.iniciar(maquina, INTERVALO_RECARGA_MS, CANTIDAD_RECARGA, null);
+
+        EntradaUsuario entrada = new EntradaConsola(teclado);
+
+        // 8. Iniciar el menu
+        int opcion = -1;
 
         do {
             System.out.println("\n==============================");
             System.out.println("     AGENCIA TEMPORAL");
             System.out.println("==============================");
             System.out.println("Jugador: " + jugador.getNombre());
-            System.out.println("Energia: " + maquina.getEnergia());
+            System.out.println("Energia: " + maquina.getEnergia() + "/" + MaquinaTemporal.ENERGIA_MAXIMA
+                    + " (se recarga sola +" + CANTIDAD_RECARGA + " cada " + (INTERVALO_RECARGA_MS / 1000) + " s)");
             System.out.println("1. Mostrar epocas");
             System.out.println("2. Mostrar misiones de una epoca");
             System.out.println("3. Jugar una mision");
@@ -59,89 +70,100 @@ public class Main {
             System.out.println("5. Mostrar futuro y consecuencias");
             System.out.println("6. Mostrar eventos");
             System.out.println("7. Recargar maquina temporal");
+            System.out.println("8. Regresar al presente");
             System.out.println("0. Salir");
             System.out.print("Elegí una opcion: ");
 
-            opcion = teclado.nextInt();
+            try {
+                opcion = teclado.nextInt();
 
-            switch (opcion) {
+                switch (opcion) {
 
-                case 1:
-                    agencia.mostrarEpocas();
-                    break;
+                    case 1:
+                        agencia.mostrarEpocas();
+                        break;
 
-                case 2: {
-                    agencia.mostrarEpocas();
-
-                    System.out.print("Numero de epoca: ");
-                    int numeroEpoca = teclado.nextInt();
-
-                    List<Epoca> epocas = List.of(edadMedia, futuro);
-
-                    if (numeroEpoca >= 1 && numeroEpoca <= epocas.size()) {
-                        epocas.get(numeroEpoca - 1).mostrarMisiones();
-                    } else {
-                        System.out.println("Numero de epoca invalido.");
-                    }
-                    break;
-                }
-
-                case 3: {
-                    agencia.mostrarEpocas();
-
-                    System.out.print("Numero de epoca: ");
-                    int numeroEpoca = teclado.nextInt();
-
-                    List<Epoca> epocas = List.of(edadMedia, futuro);
-
-                    if (numeroEpoca < 1 || numeroEpoca > epocas.size()) {
-                        System.out.println("Numero de epoca invalido.");
+                    case 2: {
+                        Epoca epoca = elegirEpoca(agencia, teclado);
+                        if (epoca != null) {
+                            epoca.mostrarMisiones();
+                        }
                         break;
                     }
 
-                    Epoca epocaElegida = epocas.get(numeroEpoca - 1);
+                    case 3: {
+                        Epoca epoca = elegirEpoca(agencia, teclado);
+                        if (epoca == null) {
+                            break;
+                        }
 
-                    epocaElegida.mostrarMisiones();
+                        epoca.mostrarMisiones();
 
-                    List<Mision> misiones = epocaElegida.getMisiones();
+                        if (!epoca.tieneMisiones()) {
+                            break;
+                        }
 
-                    if (misiones.isEmpty()) {
+                        System.out.print("Numero de mision: ");
+                        int numeroMision = teclado.nextInt();
+
+                        agencia.jugarMision(epoca, numeroMision, entrada);
                         break;
                     }
 
-                    System.out.print("Numero de mision: ");
-                    int numeroMision = teclado.nextInt();
+                    case 4:
+                        jugador.mostrarHistorial();
+                        break;
 
-                    agencia.jugarMision(epocaElegida, numeroMision, new EntradaConsola(teclado));
-                    break;
+                    case 5:
+                        agencia.getLineaTemporal().mostrarFuturo();
+                        break;
+
+                    case 6:
+                        agencia.getLineaTemporal().mostrarEventos();
+                        System.out.println("Total de eventos creados: " + Evento.getTotalEventos());
+                        break;
+
+                    case 7:
+                        maquina.recargarEnergia();
+                        break;
+
+                    case 8:
+                        agencia.regresarAlPresente();
+                        break;
+
+                    case 0:
+                        System.out.println("Gracias por jugar.");
+                        break;
+
+                    default:
+                        System.out.println("Opcion invalida.");
                 }
 
-                case 4:
-                    jugador.mostrarHistorial();
-                    break;
-
-                case 5:
-                    agencia.getLineaTemporal().mostrarFuturo();
-                    break;
-
-                case 6:
-                    agencia.getLineaTemporal().mostrarEventos();
-                    break;
-
-                case 7:
-                    maquina.recargarEnergia();
-                    break;
-
-                case 0:
-                    System.out.println("Gracias por jugar.");
-                    break;
-
-                default:
-                    System.out.println("Opcion invalida.");
+            } catch (InputMismatchException e) {
+                System.out.println("Entrada invalida: ingresa un numero.");
+                teclado.nextLine();   // descarta lo que se escribio mal
+                opcion = -1;
             }
 
         } while (opcion != 0);
 
         teclado.close();
+    }
+
+    // Muestra las epocas de la agencia y devuelve la elegida (o null si el numero no es valido).
+    private static Epoca elegirEpoca(AgenciaTemporal agencia, Scanner teclado) {
+        agencia.mostrarEpocas();
+
+        System.out.print("Numero de epoca: ");
+        int numeroEpoca = teclado.nextInt();
+
+        List<Epoca> epocas = agencia.getEpocas();
+
+        if (numeroEpoca < 1 || numeroEpoca > epocas.size()) {
+            System.out.println("Numero de epoca invalido.");
+            return null;
+        }
+
+        return epocas.get(numeroEpoca - 1);
     }
 }
