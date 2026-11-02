@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class MisionDetective extends Mision {
 
@@ -13,27 +12,20 @@ public class MisionDetective extends Mision {
     }
 
     @Override
-    public List<Consecuencia> jugar() {
+    public List<Consecuencia> jugar(EntradaUsuario entrada) {
 
-        Scanner teclado = new Scanner(System.in);
         List<Consecuencia> consecuencias = new ArrayList<>();
 
         System.out.println("\n=== MISION DE DETECTIVE ===");
-        System.out.println("Investiga el asesinato de una figura historica.");
-        System.out.println("1. Investigar las pistas");
-        System.out.println("2. Ignorar las pistas");
-        System.out.print("Elegí una opcion: ");
-
-        int opcion = teclado.nextInt();
+        int opcion = entrada.elegir(
+                "Investiga el asesinato de una figura historica.",
+                "Investigar las pistas", "Ignorar las pistas");
 
         if (opcion == 1) {
 
-            System.out.println("\nEncontraste pruebas importantes.");
-            System.out.println("1. Capturar al culpable");
-            System.out.println("2. Dejarlo escapar");
-            System.out.print("Elegí una opcion: ");
-
-            int decision = teclado.nextInt();
+            int decision = entrada.elegir(
+                    "Encontraste pruebas importantes.",
+                    "Capturar al culpable", "Dejarlo escapar");
 
             if (decision == 1) {
 

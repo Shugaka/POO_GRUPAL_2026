@@ -71,5 +71,5 @@ public abstract class Mision implements Jugabilidad {
         }
     }
 
-    public abstract List<Consecuencia> jugar();
+    public abstract List<Consecuencia> jugar(EntradaUsuario entrada);
 }

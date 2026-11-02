@@ -4,8 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a7c6dee-4cac-4db8-8471-f29fdce32e91" name="Changes" comment="agrego el uml de la actividad del dia">
+    <list default="true" id="9a7c6dee-4cac-4db8-8471-f29fdce32e91" name="Changes" comment="ordeno la repo">
+      <change afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Octubre/Clase19_10/test 10" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/AgenciaTemporal.class" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/AgenciaTemporal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Consecuencia.class" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Consecuencia.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Epoca.class" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Epoca.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Evento.class" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Evento.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Jugabilidad.class" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Jugabilidad.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Jugador.class" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Jugador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/LineaTemporal.class" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/LineaTemporal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/MaquinaTemporal.class" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/MaquinaTemporal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Mision.class" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Mision.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/MisionDetective.class" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/MisionDetective.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/MisionPlataformas.class" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/MisionPlataformas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/src/AgenciaTemporal.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/src/AgenciaTemporal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/src/Jugabilidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/src/Jugabilidad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/src/Mision.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/src/Mision.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/src/MisionDetective.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/src/MisionDetective.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/src/MisionPlataformas.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/src/MisionPlataformas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO_GRUPAL_2026/Octubre/Clase12_10/Test_File" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Octubre/Feriado12_10/Test_File" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,50 +76,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Ejercicio1Manual1.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.Ejercicio1Manual1.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.MainGUI.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Admin/IdeaProjects/POO_GRUPAL_2026",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/Admin/IdeaProjects/POO_GRUPAL_2026/AgenciaTemporal/src/src/src/Main.kt",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\IdeaProjects\POO_GRUPAL_2026\POO_GRUPAL_2026\Octubre\Clase05_10" />
       <recent name="C:\Users\Admin\IdeaProjects\POO_GRUPAL_2026\POO_GRUPAL_2026\Agosto\Clase31_8" />
       <recent name="C:\Users\Admin\IdeaProjects\POO_GRUPAL_2026\.idea" />
       <recent name="C:\Users\Admin\IdeaProjects\POO_GRUPAL_2026" />
       <recent name="C:\Users\Admin\IdeaProjects\POO_GRUPAL_2026\POO_GRUPAL_2026\Clase24_8" />
-      <recent name="C:\Users\urive\IdeaProjects\POO_GRUPAL_2026\src" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="ClasificacionCalificacionCEPURBEDA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Clase10_8.ClasificacionCalificacionCEPURBEDA" />
-      <module name="POO_GRUPAL_2026" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Agosto.Clase10_8.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="AgenciaTemporal" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -115,7 +133,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ClasificacionCalificacionCEPURBEDA" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -157,7 +175,19 @@
     <MESSAGE value="guia3" />
     <MESSAGE value="arreglo para que tome el source directory" />
     <MESSAGE value="agrego el uml de la actividad del dia" />
-    <option name="LAST_COMMIT_MESSAGE" value="agrego el uml de la actividad del dia" />
+    <MESSAGE value="ordeno la repo" />
+    <option name="LAST_COMMIT_MESSAGE" value="ordeno la repo" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/AgenciaTemporal/src/src/src/Main.kt</url>
+          <line>11</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

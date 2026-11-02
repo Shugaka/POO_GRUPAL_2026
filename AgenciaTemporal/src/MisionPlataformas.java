@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class MisionPlataformas extends Mision {
 
@@ -13,25 +12,19 @@ public class MisionPlataformas extends Mision {
     }
 
     @Override
-    public List<Consecuencia> jugar() {
+    public List<Consecuencia> jugar(EntradaUsuario entrada) {
 
-        Scanner teclado = new Scanner(System.in);
         List<Consecuencia> consecuencias = new ArrayList<>();
 
         System.out.println("\n=== MISION DE PLATAFORMAS ===");
-        System.out.println("Tenes que atravesar un nivel.");
-        System.out.println("1. Explorar y recolectar monedas");
-        System.out.println("2. Avanzar rapidamente");
-        System.out.print("Elegí una opcion: ");
-
-        int opcion = teclado.nextInt();
+        int opcion = entrada.elegir(
+                "Tenes que atravesar un nivel.",
+                "Explorar y recolectar monedas", "Avanzar rapidamente");
 
         if (opcion == 1) {
 
             System.out.println("Recolectaste monedas.");
-            System.out.println("¿Cuantos enemigos derrotaste?");
-
-            int enemigos = teclado.nextInt();
+            int enemigos = entrada.pedirNumero("Cuantos enemigos derrotaste?");
 
             if (enemigos >= 3) {
                 consecuencias.add(

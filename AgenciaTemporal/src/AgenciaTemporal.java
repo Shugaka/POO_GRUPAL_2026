@@ -21,6 +21,10 @@ public class AgenciaTemporal {
         return lineaTemporal;
     }
 
+    public List<Epoca> getEpocas() {
+        return new ArrayList<>(epocas);
+    }
+
     public void agregarEpoca(Epoca epoca) {
         epocas.add(epoca);
     }
@@ -42,7 +46,7 @@ public class AgenciaTemporal {
     }
 
 
-    public void jugarMision(Epoca epoca, int numeroMision) {
+    public void jugarMision(Epoca epoca, int numeroMision, EntradaUsuario entrada) {
         if (!epocas.contains(epoca)) {
             System.out.println("Esta epoca no pertenece a la agencia.");
             return;
@@ -71,7 +75,7 @@ public class AgenciaTemporal {
 
         mision.iniciar();
 
-        List<Consecuencia> consecuencias = mision.jugar();
+        List<Consecuencia> consecuencias = mision.jugar(entrada);
 
         if (consecuencias != null && !consecuencias.isEmpty()) {
             for (Consecuencia consecuencia : consecuencias) {

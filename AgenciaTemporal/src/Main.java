@@ -112,7 +112,7 @@ public class Main {
                     System.out.print("Numero de mision: ");
                     int numeroMision = teclado.nextInt();
 
-                    agencia.jugarMision(epocaElegida, numeroMision);
+                    agencia.jugarMision(epocaElegida, numeroMision, new EntradaConsola(teclado));
                     break;
                 }
 
