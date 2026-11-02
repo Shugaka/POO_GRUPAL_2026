@@ -4,28 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a7c6dee-4cac-4db8-8471-f29fdce32e91" name="Changes" comment="ordeno la repo">
-      <change afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Octubre/Clase19_10/test 10" afterDir="false" />
+    <list default="true" id="9a7c6dee-4cac-4db8-8471-f29fdce32e91" name="Changes" comment="agrego GUI swing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/AgenciaTemporal.class" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/AgenciaTemporal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Consecuencia.class" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Consecuencia.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Epoca.class" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Epoca.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Evento.class" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Evento.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Jugabilidad.class" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Jugabilidad.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Jugador.class" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Jugador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/LineaTemporal.class" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/LineaTemporal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/MaquinaTemporal.class" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/MaquinaTemporal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Mision.class" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/Mision.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/MisionDetective.class" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/MisionDetective.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/MisionPlataformas.class" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/out/production/AgenciaTemporal/MisionPlataformas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/src/AgenciaTemporal.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/src/AgenciaTemporal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/src/Jugabilidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/src/Jugabilidad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/src/Mision.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/src/Mision.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/src/MisionDetective.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/src/MisionDetective.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgenciaTemporal/src/MisionPlataformas.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgenciaTemporal/src/MisionPlataformas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO_GRUPAL_2026/Octubre/Clase12_10/Test_File" beforeDir="false" afterPath="$PROJECT_DIR$/POO_GRUPAL_2026/Octubre/Feriado12_10/Test_File" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +156,8 @@
     <MESSAGE value="arreglo para que tome el source directory" />
     <MESSAGE value="agrego el uml de la actividad del dia" />
     <MESSAGE value="ordeno la repo" />
-    <option name="LAST_COMMIT_MESSAGE" value="ordeno la repo" />
+    <MESSAGE value="agrego GUI swing" />
+    <option name="LAST_COMMIT_MESSAGE" value="agrego GUI swing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
